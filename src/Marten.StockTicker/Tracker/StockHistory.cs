@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using Marten.StockTicker.Tracker;
 
-namespace Marten.StockTicker.Queries
+namespace Marten.StockTicker.Tracker
 {
     public class StockHistory
     {

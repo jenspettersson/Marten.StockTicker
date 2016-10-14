@@ -76,11 +76,11 @@
     <Compile Include="Application.cs" />
     <Compile Include="Changes\StockRatesUpdated.cs" />
     <Compile Include="Changes\StockRatesUpdatedHandler.cs" />
-    <Compile Include="Queries\ChangeModel.cs" />
+    <Compile Include="Tracker\ChangeModel.cs" />
     <Compile Include="Queries\GetAllStocks.cs" />
     <Compile Include="Queries\GetStock.cs" />
     <Compile Include="Queries\GetStockHistory.cs" />
-    <Compile Include="Queries\StockHistory.cs" />
+    <Compile Include="Tracker\StockHistory.cs" />
     <Compile Include="StartTracking\NewStockAdded.cs" />
     <Compile Include="StartTracking\StartTrackStock.cs" />
     <Compile Include="StartTracking\StartTrackStockHandler.cs" />

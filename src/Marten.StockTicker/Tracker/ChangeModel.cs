@@ -1,4 +1,4 @@
-﻿namespace Marten.StockTicker.Queries
+﻿namespace Marten.StockTicker.Tracker
 {
     public class ChangeModel
     {
