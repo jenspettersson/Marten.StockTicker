@@ -74,14 +74,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Application.cs" />
-    <Compile Include="Features\Changes\StockRatesUpdated.cs" />
-    <Compile Include="Features\Changes\StockRateUpdatedHandler.cs" />
-    <Compile Include="Features\Queries\GetAllStocks.cs" />
-    <Compile Include="Features\Queries\GetStock.cs" />
-    <Compile Include="Features\Queries\GetStockHistory.cs" />
-    <Compile Include="Features\StartTracking\NewStockAdded.cs" />
-    <Compile Include="Features\StartTracking\StartTrackStock.cs" />
-    <Compile Include="Features\StartTracking\StartTrackStockHandler.cs" />
+    <Compile Include="Changes\StockRatesUpdated.cs" />
+    <Compile Include="Changes\StockRatesUpdatedHandler.cs" />
+    <Compile Include="Queries\ChangeModel.cs" />
+    <Compile Include="Queries\GetAllStocks.cs" />
+    <Compile Include="Queries\GetStock.cs" />
+    <Compile Include="Queries\GetStockHistory.cs" />
+    <Compile Include="Queries\StockHistory.cs" />
+    <Compile Include="StartTracking\NewStockAdded.cs" />
+    <Compile Include="StartTracking\StartTrackStock.cs" />
+    <Compile Include="StartTracking\StartTrackStockHandler.cs" />
     <Compile Include="IWriter.cs" />
     <Compile Include="Ticker\AddNewStockToTicker.cs" />
     <Compile Include="Ticker\StartTicker.cs" />

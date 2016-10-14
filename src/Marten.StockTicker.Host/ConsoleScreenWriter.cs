@@ -1,31 +1,29 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Text;
 
 namespace Marten.StockTicker.Host
 {
     public class ConsoleScreenWriter : IWriter
     {
-        private readonly List<string> _lines = new List<string>();
+        private readonly StringBuilder _stringBuilder = new StringBuilder();
 
         public void Write(string write)
         {
-            _lines.Add(write);
+            _stringBuilder.Append(write);
         }
 
         public void WriteLine(string line)
         {
-            _lines.Add($"{line}\n");
+            _stringBuilder.AppendLine(line);
         }
 
         public void Render()
         {
             Console.Clear();
-            foreach (var line in _lines)
-            {
-                Console.Write(line);
-            }
+            
+            Console.Write(_stringBuilder.ToString());
 
-            _lines.Clear();
+            _stringBuilder.Clear();
         }
 
         public void SetColor(ConsoleColor consoleColor)

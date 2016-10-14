@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using Marten.StockTicker.Features.Changes;
+using Marten.StockTicker.Changes;
 using Marten.StockTicker.Ticker;
 using Marten.StockTicker.Tracker;
 using MediatR;

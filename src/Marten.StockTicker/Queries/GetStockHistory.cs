@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using Marten.StockTicker.Tracker;
 using MediatR;
 
-namespace Marten.StockTicker.Features.Queries
+namespace Marten.StockTicker.Queries
 {
     public class GetStockHistory : IAsyncRequest<StockHistory>
     {
@@ -37,36 +35,4 @@ namespace Marten.StockTicker.Features.Queries
             return await _session.Events.AggregateStreamAsync<StockHistory>(streamId);
         }
     }
-
-    public class StockHistory
-    {
-        public Guid Id { get; set; }
-        public string Symbol { get; set; }
-        public decimal StartRate { get; set; }
-        public List<ChangeModel> Changes { get; set; } = new List<ChangeModel>();
-
-        public void Apply(TrackingStarted evt)
-        {
-            StartRate = evt.StartRate;
-            Symbol = evt.Symbol;
-        }
-
-        public void Apply(StockRateChanged evt)
-        {
-            Changes.Add(new ChangeModel(evt.Rate, evt.Change));
-        }
-    }
-
-    public class ChangeModel
-    {
-        public decimal Rate { get; set; }
-        public decimal Change { get; set; }
-
-        public ChangeModel(decimal rate, decimal change)
-        {
-            Rate = rate;
-            Change = change;
-        }
-    }
-
 }

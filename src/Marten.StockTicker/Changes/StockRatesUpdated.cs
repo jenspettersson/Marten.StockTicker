@@ -2,7 +2,7 @@
 using Marten.StockTicker.Ticker;
 using MediatR;
 
-namespace Marten.StockTicker.Features.Changes
+namespace Marten.StockTicker.Changes
 {
     public class StockRatesUpdated : IAsyncNotification
     {

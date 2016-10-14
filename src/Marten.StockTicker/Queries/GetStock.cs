@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Marten.StockTicker.Tracker;
 using MediatR;
 
-namespace Marten.StockTicker.Features.Queries
+namespace Marten.StockTicker.Queries
 {
     public class GetStock : IAsyncRequest<TrackedStock>
     {

@@ -2,13 +2,13 @@
 using Marten.StockTicker.Tracker;
 using MediatR;
 
-namespace Marten.StockTicker.Features.Changes
+namespace Marten.StockTicker.Changes
 {
-    public class StockRateUpdatedHandler : IAsyncNotificationHandler<StockRatesUpdated>
+    public class StockRatesUpdatedHandler : IAsyncNotificationHandler<StockRatesUpdated>
     {
         private readonly IDocumentSession _session;
 
-        public StockRateUpdatedHandler(IDocumentSession session)
+        public StockRatesUpdatedHandler(IDocumentSession session)
         {
             _session = session;
         }

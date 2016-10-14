@@ -5,7 +5,7 @@ using Marten.StockTicker.Ticker;
 using Marten.StockTicker.Tracker;
 using MediatR;
 
-namespace Marten.StockTicker.Features.StartTracking
+namespace Marten.StockTicker.StartTracking
 {
     public class StartTrackStockHandler : AsyncRequestHandler<StartTrackStock>
     {

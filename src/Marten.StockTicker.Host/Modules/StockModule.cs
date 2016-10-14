@@ -1,5 +1,5 @@
-﻿using Marten.StockTicker.Features.Queries;
-using Marten.StockTicker.Features.StartTracking;
+﻿using Marten.StockTicker.Queries;
+using Marten.StockTicker.StartTracking;
 using MediatR;
 using Nancy;
 using Nancy.ModelBinding;

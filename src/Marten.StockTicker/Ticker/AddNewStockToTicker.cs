@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using Marten.StockTicker.Features.StartTracking;
+using Marten.StockTicker.StartTracking;
 using MediatR;
 
 namespace Marten.StockTicker.Ticker

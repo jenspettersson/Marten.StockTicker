@@ -1,7 +1,7 @@
 ﻿using Marten.StockTicker.Ticker;
 using MediatR;
 
-namespace Marten.StockTicker.Features.StartTracking
+namespace Marten.StockTicker.StartTracking
 {
     public class NewStockAdded : IAsyncNotification
     {
